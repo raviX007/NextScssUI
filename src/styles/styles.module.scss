@@ -139,10 +139,13 @@
   gap: 20px;
 }
 
-.imageContainer,
-.imageContainerH {
-  width: 100%;
-  height: auto; /* Make images responsive */
+.imageContainer {
+  display: flex; /* Use flexbox for horizontal layout */
+  flex-direction: column; /* Stack items vertically */
+  justify-content: center; /* Center items vertically */
+  align-items: center; /* Center items horizontally */
+  text-align: center; /* Center text */
+  height: 100%; /* Use the full height of the container */
 }
 
 .hotelContainer {
@@ -194,8 +197,8 @@
     grid-template-columns: repeat(2, minmax(0, 1fr)); /* Two columns for smaller screens */
   }
 
-  .imageGridH {
-    grid-template-columns: repeat(1, minmax(0, 1fr)); /* Single column for smaller screens */
+  .navB {
+    max-width: 100%; /* Set max-width to 100% for smaller screens */
   }
 
   .propertiesContainer {
@@ -216,6 +219,7 @@
     grid-template-columns: repeat(1, minmax(0, 1fr)); /* Single column for smallest screens */
   }
 }
+
 .navB {
   width: 100%; /* Set initial width to 100% */
   max-width: 1250px; /* Set max-width */
@@ -228,12 +232,6 @@
   }
 }
 
-@media (max-width: 768px) {
-  .navB {
-    max-width: 100%; /* Set max-width to 100% for smaller screens */
-  }
-}
-// Navbar component styles
 .navbar {
   width: 100%;
   max-width: 1250px;
@@ -246,6 +244,7 @@
     max-width: 100%;
   }
 }
+
 .navbar-svg {
   width: 100%; /* Set the width to 100% to make it responsive */
   max-width: 1250px; /* Set a max-width if needed */
@@ -258,4 +257,11 @@
   .navbar-svg {
     max-width: 100%; /* Set max-width to 100% for smaller screens */
   }
+}
+.imageGridH {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr)); /* 3 columns for larger screens */
+  gap: 20px; /* Gap between grid items */
+  padding-top: 40px; /* Adjusted padding */
+  justify-items: center; /* Center items horizontally */
 }
