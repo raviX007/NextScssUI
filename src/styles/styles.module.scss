@@ -110,6 +110,7 @@
 //   height:296px;
 //   width: 257px;
 // }
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 .mainContainer {
   padding: 80px 20px; /* Updated padding for smaller screens */
 }
@@ -126,11 +127,13 @@
 }
 
 .headerText {
-  font-size: 2rem; /* Updated font size */
+  font-size: 2rem;
+  font-family: "Poppins"; /* Updated font size */
 }
 
 .headerSmolText {
-  font-size: 1rem; /* Updated font size */
+  font-size: 1rem;
+  font-family: "Poppins" /* Updated font size */
 }
 
 .imageGrid {
@@ -169,6 +172,7 @@
 
 .propertiesContainer {
   max-width: 1250px;
+  height: 144px; /*
   margin: 0 auto; /* Center the container */
 }
 
@@ -181,7 +185,8 @@
 }
 
 .whyChooseUsContent {
-  padding: 0 20px; /* Add padding for smaller screens */
+  padding: 0  20px;
+  font-family: "Poppins" /* Add padding for smaller screens */
 }
 
 @media (max-width: 768px) {
@@ -202,7 +207,7 @@
   }
 
   .propertiesContainer {
-    padding-top: 100px; /* Adjusted padding for smaller screens */
+    padding-top: 80px; /* Adjusted padding for smaller screens */
   }
 }
 
@@ -212,7 +217,8 @@
   }
 
   .headerSmolText {
-    font-size: 0.8rem; /* Further reduced font size for smaller screens */
+    font-size: 0.8rem;
+    font-family: "Poppins" /* Further reduced font size for smaller screens */
   }
 
   .imageGrid {
@@ -264,4 +270,7 @@
   gap: 20px; /* Gap between grid items */
   padding-top: 40px; /* Adjusted padding */
   justify-items: center; /* Center items horizontally */
+}
+.gridContent{
+  font-family: "Poppins";
 }
